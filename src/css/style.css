@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Vollkorn";
+  src: url("https://fonts.googleapis.com/css?family=Vollkorn&display=swap"); }
+body {
+  font-family: Vollkorn; }
+
+header {
+  margin-top: -40px;
+  font-family: Vollkorn;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 120vh; }
+  header .header_div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15vh; }
+    header .header_div .header_text {
+      color: #6a7580;
+      font-size: 38pt; }
+      header .header_div .header_text .header_nom {
+        color: #82ccdd; }
+    header .header_div button {
+      font-size: 20pt;
+      width: 200px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 20px;
+      background-color: #82ccdd; }
+
+#section1 .navbar {
+  background-color: #151A1D;
+  font-family: Vollkorn; }
+  #section1 .navbar a {
+    color: #82ccdd; }
+
+/*# sourceMappingURL=style.css.map */
