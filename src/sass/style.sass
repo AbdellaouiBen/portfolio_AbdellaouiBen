@@ -1,11 +1,12 @@
-@font-face 
+@import "./variables.sass"
+
+@font-face  
     font-family: 'Vollkorn'
     src: url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap')
-
-
+ 
 
 body  
-    font-family: Vollkorn
+    font-family: Vollkorn   
 header
     margin-top: -40px 
     font-family: Vollkorn
@@ -17,24 +18,43 @@ header
         display: flex
         align-items: center
         flex-direction: column
-        padding-top: 15vh
+        padding-top: 20vh
         .header_text 
             color: #6a7580 
             font-size: 38pt
             .header_nom 
-                color: #82ccdd  
+                color: $color1   
         button
             font-size: 20pt 
-            width: 200px  
-            padding: 10px 15px
-            border: none
+            width: 130px  
+            padding: 5px 0px 
+            border: none 
             border-radius: 20px 
-            background-color: #82ccdd 
-#section1
+            background-color: $color1 
+            margin-top: 5vh 
+.navSticky
+    position: sticky
+    width: 100% 
+    
+#nav 
+
+    border-bottom: 3px solid $color1
     .navbar
-        background-color: #151A1D
+        background-color: $color2
         font-family: Vollkorn
         a 
-            color: #82ccdd
+            color: $color1
+
+.titre_div
+    text-align: center 
+    padding: 50px 
+    height: 700px 
+    .titre_h1
+        color: $color2
+
+    .hr_titre
+        width: 6vh 
+        border-top: 3px solid $color2 
+    
     
                 

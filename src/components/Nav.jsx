@@ -1,34 +1,43 @@
 import React from 'react'
 
-const Nav =()=> {
+const Nav =(props)=> {
+
+    function myFunction() {
+        if (document.body.scrollTop > 50 ) {
+          console.log("jknsdovnsdll");
+          
+        } 
+      }
+      myFunction()
+
+
+
 
     return(
-       <section id="section1">
+       <section id="nav" className={props.navDispl}>
            <div>
-                
 
-
-                <nav class="navbar navbar-expand-lg navbar-dark ">
-                        <a class="navbar-brand" href="#header">Home</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                <nav className="navbar navbar-expand-lg navbar-dark ">
+                        <a className="navbar-brand" href="#header">Home</a>
+                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarText">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                        <div className="collapse navbar-collapse" id="navbarText">
+                            <ul className="navbar-nav mr-auto">
+                                <li className="nav-item ">
+                                    <a className="nav-link" href="#about">About <span className="sr-only">(current)</span></a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#portfolio">Portfolio</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#services">Services</a>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#services">Services</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#contact">Contact</a>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#contact">Contact</a>
                                 </li>
                             </ul>
-                            <span class="navbar-text">
+                            <span className="navbar-text">
                                 Your website is a click away.
                             </span>
                         </div>
