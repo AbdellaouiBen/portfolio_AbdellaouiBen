@@ -1,13 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
+// , { useState }
 import Header from './components/Header.jsx'
 import Nav from './components/Nav.jsx'
-import About from './components/About.jsx'
 import Titre from './components/Titre.jsx'
+import About from './components/About.jsx'
+import Projets from './components/Projets.jsx'
 
 const App = () => {
 
 
-
+ 
     // const [navDispl, setNavDispl] = useState('navNormale')
     // const descend = (e) => {
     //     console.log(window.scrollY);
@@ -22,10 +24,15 @@ const App = () => {
     return (
         <div>
             <Header />
-            <div>
+            <div> 
                 <Nav   />
+                <Titre nom='ABOUT' />
                 <About />
-                <Titre nom='About' />
+                <div className="bg_projets">
+                   <Titre nom='PROJETS' />
+                    <Projets /> 
+                </div>
+                
             </div>
             
 

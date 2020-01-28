@@ -5,20 +5,32 @@
     src: url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap')
  
 
+// scrollbar
+body::-webkit-scrollbar 
+    width: 9px
+body::-webkit-scrollbar-track 
+    background-color: $color1
+    box-shadow: inset 0 0 7px black 
+body::-webkit-scrollbar-thumb 
+    background-color: $color1
+    outline: 1px solid slategrey
+
+// body
 body  
-    font-family: Vollkorn   
+    font-family: Vollkorn  
+// header 
 header
     margin-top: -40px 
     font-family: Vollkorn
-    background-image: url('../images/header.jpg')
+    background-image: url('../images/header2.jpg')
     background-size: cover     
     background-repeat: no-repeat
-    height: 120vh 
+    height: 110vh 
     .header_div
         display: flex
         align-items: center
         flex-direction: column
-        padding-top: 20vh
+        padding-top: 10vh
         .header_text 
             color: #6a7580 
             font-size: 38pt
@@ -31,30 +43,227 @@ header
             border: none 
             border-radius: 20px 
             background-color: $color1 
-            margin-top: 5vh 
-.navSticky
-    position: sticky
-    width: 100% 
-    
-#nav 
+            margin-top: 20vh 
 
+
+// nav
+#nav 
+    z-index: 10
+    position: sticky
+    top: 0
     border-bottom: 3px solid $color1
     .navbar
         background-color: $color2
         font-family: Vollkorn
         a 
             color: $color1
+ 
 
+// titre
 .titre_div
     text-align: center 
     padding: 50px 
-    height: 700px 
+    height: 150px 
     .titre_h1
         color: $color2
 
     .hr_titre
-        width: 6vh 
+        width: 10vh 
         border-top: 3px solid $color2 
     
-    
+
+  
+
+// about
+
+
+#CarteAbout
+    justify-content: center
+
+
+.hexagon 
+    background-color: $color1
+    display: inline-block
+    height: 100%
+    width: calc(100% * 0.57735)
+
+.hexagon:before 
+    background-color: inherit
+    content: ""
+    height: inherit
+    position: absolute
+    right: calc((100% / 2) - ((100% * 0.57735) / 2))
+    top: 0
+    transform: rotateZ(60deg)
+    width: inherit
+
+.hexagon i 
+    color: white
+    font-size: 34pt
+    left: 0
+    position: absolute
+    right: 0 
+    top: 22px  
+    z-index: 1
+
+
+.hexagon:after 
+    background-color: inherit
+    content: ""
+    height: inherit
+    position: absolute
+    right: calc((100% / 2) - ((100% * 0.57735) / 2))
+    top: 0
+    transform: rotateZ(-60deg)
+    width: inherit
+
+
+.hex-wrap 
+    display: inline-block
+    left: 35%
+    height: 90px
+    position: relative
+    text-align: center
+    width: 80px          
+// paragraphe about 
+.colorAbout
+    color: #616161 
+
+
+
+
+// about: hexagon 2 avec photoProfil
+ 
+.hexagon2 
+    left: 27% 
+    position: relative
+    width: 250px
+    height: 144.34px
+    margin: 72.17px 0
+    background-image: url(https://www.stepstone.be/wp-content/uploads/CV-Portret-Foto.jpg)
+    background-size: auto 288.6751px
+    background-position: center
+    box-shadow: 0 0 20px rgba(57,162,193,0.5) 
+
+
+.hexTop,
+.hexBottom 
+    position: absolute
+    z-index: 1
+    width: 176.78px
+    height: 176.78px
+    overflow: hidden
+    -webkit-transform: scaleY(0.5774) rotate(-45deg)
+    -ms-transform: scaleY(0.5774) rotate(-45deg)
+    transform: scaleY(0.5774) rotate(-45deg)
+    background: inherit
+    left: 36.61px
+    box-shadow: 0 0 20px rgba(57,162,193,0.5)
+
+
+/*counter transform the bg image on the caps*/
+.hexTop:after,
+.hexBottom:after 
+    content: ""
+    position: absolute
+    width: 250.0000px
+    height: 144.33756729740645px
+    -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-72.1688px)
+    -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-72.1688px)
+    transform:          rotate(45deg) scaleY(1.7321) translateY(-72.1688px)
+    -webkit-transform-origin: 0 0
+    -ms-transform-origin: 0 0
+    transform-origin: 0 0
+    background: inherit
+
+
+.hexTop 
+    top: -88.3883px
+
+.hexTop:after    
+    background-position: center top
+.hexBottom 
+    bottom: -88.3883px 
+
+.hexBottom:after  
+    background-position: center bottom
+
+.hexagon2:after 
+    content: ""
+    position: absolute
+    top: 0.0000px
+    left: 0px 
+    width: 250.0000px
+    height: 144.3376px
+    z-index: 2
+    background: inherit
+
+// paragraphe de About pour Who's this guy
+#aboutWho
+    a 
+        color: $color1
+        text-decoration: none
+.pAboutWho
+    position: absolute 
+    left: 35px   
+    text-align: center 
+    font-size: 16px 
+    width: 490px 
+    margin: 0 
+
+// about skills progress bar
+.bars-wrap
+    width: calc(100% - 15px)
+.bar 
+    align-items: flex-end 
+    background-color: #eee
+    color: grey   
+    font-size: 12pt
+    height: 37px
+    margin: 0 0 30px 0
+    position: relative 
+.bar.fill 
+    left: 0
+    position: absolute
+    top: 0
+    background-color: $color1        
+    opacity: 1
+    padding: 0 
+.bar  
+    .tag 
+        text-align: center 
+        left: 0
+        position: absolute 
+        top: 0    
+        background-color: #04c2c9
+        color: #fff  
+        height: 100%
+        width: 100px 
+        span 
+            position: absolute
+            left: 0
+            top: 7px 
+.bar   
+    span  
+        position: absolute
+        top: 7px  
+        right: 7px 
+        font-weight: bold  
+  
+     
+//Projets    
+
+// menu des projets
+.bg_projets
+    background-color: #DDDDDD      
+#projets   
+    li   
+        list-style: none 
+        button 
+            font-weight: bold 
+            border: none
+            padding: 15px 60px
+            background-color: #DDDDDD  
+            color: grey 
+             
                 
