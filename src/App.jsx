@@ -5,6 +5,9 @@ import Nav from './components/Nav.jsx'
 import Titre from './components/Titre.jsx'
 import About from './components/About.jsx'
 import Projets from './components/Projets.jsx'
+import Services from './components/Services.jsx'
+import Contact from './components/Contact.jsx'
+import Footer from './components/Footer.jsx'
 
 const App = () => {
 
@@ -32,6 +35,16 @@ const App = () => {
                    <Titre nom='PROJETS' />
                     <Projets /> 
                 </div>
+                <div className="bg_Services">
+                    <Titre nom='Services' />
+                    <Services bg="$bleu"/>
+                </div>
+                <div className="bg_contact">
+                    <Titre nom='Contact' />
+                    <Contact />
+                </div>
+                    <Footer />
+
                 
             </div>
             

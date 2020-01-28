@@ -1,19 +1,18 @@
 import React from 'react'
 
 const Projets = (props)=> {
-  
+
     const choixProjet = ()=> {
         console.log("bdk");
-         
+        
     }
     
-      
+    
     let liste_de_projets =["ALL","Html/CSS","JAVASCIPT","REACT"]
     const listeProjets= liste_de_projets.map((e,index)=> 
         <li key={index}>  
             <button onClick={choixProjet} >{e}</button> 
-        </li> 
-         
+        </li>
     )
 
     

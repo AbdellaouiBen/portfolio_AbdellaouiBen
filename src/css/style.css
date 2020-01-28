@@ -237,4 +237,66 @@ header {
     background-color: #DDDDDD;
     color: grey; }
 
+.bg_Services {
+  background-color: #39A2C1; }
+
+#services {
+  height: 800px; }
+
+.service_what {
+  text-align: center;
+  color: blue;
+  font-size: 50px;
+  font-weight: bold; }
+
+.carte_service {
+  margin: auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #39A2C1; }
+  .carte_service .icon_style {
+    text-align: center;
+    border-radius: 90px;
+    width: 55px;
+    padding: 10px;
+    color: white;
+    background-color: black; }
+  .carte_service .carte_service_nom {
+    text-align: center;
+    width: 600px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px; }
+  .carte_service .carte_service_petitText {
+    text-align: center;
+    width: 400px;
+    font-weight: lighter; }
+  .carte_service .carte_service_sous_titre {
+    text-align: center;
+    color: white; }
+  .carte_service .carte_service_sous_titre_text {
+    text-align: center; }
+  .carte_service .carte_service_sous_titre2 {
+    text-align: center;
+    color: white; }
+  .carte_service .carte_service_sous_titre_text2 {
+    text-align: center; }
+    .carte_service .carte_service_sous_titre_text2 ul {
+      padding: 0; }
+      .carte_service .carte_service_sous_titre_text2 ul li {
+        list-style: none; }
+
+.bg_contact {
+  background-color: #252934; }
+  .bg_contact .titre_h1 {
+    color: white; }
+  .bg_contact .hr_titre {
+    border-top: 3px solid white; }
+
+#footer {
+  background-color: #151A1D;
+  color: grey; }
+
 /*# sourceMappingURL=style.css.map */
