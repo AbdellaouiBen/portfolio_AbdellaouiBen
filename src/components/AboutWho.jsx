@@ -18,9 +18,9 @@ const AboutWho = (props) => {
     })
 
 
-
+    // col-lg-3 col-md-6 col-sm-12
     return (
-            <div id="aboutWho" className="col-6 mb-5"> 
+            <div id="aboutWho" className=" col-xl-6 col-sm-12  mb-5"> 
 
                 <div className={aboutWhoChange1}> 
                     <div className="hexTop"></div>

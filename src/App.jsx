@@ -29,22 +29,22 @@ const App = () => {
             <Header />
             <div> 
                 <Nav   />
-                <Titre nom='ABOUT' scrolll={400}/>
+                <Titre nom='ABOUT' scrolll={400} ident='about'/>
                 <About />
 
                 <div className="bg_projets">
-                   <Titre nom='PROJETS' scrolll={1300}/>
+                   <Titre nom='PORTFOLIO' scrolll={1300} ident='portfolio'/>
                     <Projets /> 
                 </div>
 
                 <div className="bg_Services">
-                    <Titre nom='Services' scrolll={1900}/>
+                    <Titre nom='SERVICES' scrolll={1900} ident='services'/>
                     <Services bg="$bleu"/>
                 </div>
 
                 <div className="bg_contact">
                      
-                    <Titre nom='Contact' scrolll={2500}/>
+                    <Titre nom='CONTACT' scrolll={3700} ident='contact'/>
                     <Contact />
                 </div>
 

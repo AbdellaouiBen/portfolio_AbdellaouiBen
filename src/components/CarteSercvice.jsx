@@ -31,7 +31,7 @@ const CarteSercvice = (props)=> {
                 <ul>
 
                     {props.sous_titre_text2.map((e,index)=>
-                    <li key={index}>{e}</li>
+                    <li className="py-1" key={index}>{e}</li>
                     )}
                 </ul>
                 </div>

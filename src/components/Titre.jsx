@@ -16,7 +16,7 @@ const Titre = (props)=> {
 
     
     return(
-        <section className={titreChange1}>  
+        <section className={titreChange1} id={props.ident}>  
             <div className='titre_div'>
                 <h1 className='titre_h1'><b>{props.nom}</b></h1>
                 <hr className="hr_titre"/>

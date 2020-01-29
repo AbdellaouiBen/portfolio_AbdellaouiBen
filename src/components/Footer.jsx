@@ -7,7 +7,7 @@ const Footer = (props)=> {
  
     useEffect(()=>{
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 3240) {
+            if (window.scrollY > 4200) {
                 setFooterChange1('icon-wrap animated fadeIn')
                 setFooterChange2('footer_div animated fadeIn')
             }

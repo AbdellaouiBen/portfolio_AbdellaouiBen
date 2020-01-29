@@ -8,10 +8,10 @@ const Contact = (props)=> {
  
     useEffect(()=>{
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 2500) {
+            if (window.scrollY > 3700) {
                 setContactChange1('contact_text pb-5 animated fadeInRight')
             }
-            if (window.scrollY >2700) {
+            if (window.scrollY > 3750) {
                 setContactChange2('row no-gutters animated fadeInLeft')
             }
           })  
