@@ -1,31 +1,47 @@
-import React from 'react'
+import React, {useState,useEffect}  from 'react'
 
 const Contact = (props)=> {
 
+
+    const [contactChange1,setContactChange1] = useState("contact_text pb-5 invisible")
+    const [contactChange2,setContactChange2] = useState("row no-gutters invisible")
+ 
+    useEffect(()=>{
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 2500) {
+                setContactChange1('contact_text pb-5 animated fadeInRight')
+            }
+            if (window.scrollY >2700) {
+                setContactChange2('row no-gutters animated fadeInLeft')
+            }
+          })  
+    })
+
+
+
+
     
     return(
-        <section className="py-5">  
-            <div>
-            Have a question or want to work together?
-
+        <section className="pb-5">  
+            <div className={contactChange1}>
+                Have a question or want to work together?
             </div>
 
 
-            <form className="waypoint animated pop-in" data-animation="pop-in" data-delay=".5s" id="contact-form" >
-                <input placeholder="Name" type="text" name="name" required=""/>
-                <input placeholder="Enter email" type="email" name="email" required=""/>
-                <textarea placeholder="Your Message" type="text" name="message" clasclassNames=""></textarea>
-                <div id="success">
-                <div>
-                    Your message was sent successfully. Thanks!<span id="close" className="mdi mdi-close"></span>
-                </div>
-                </div>
-                <input className="button" type="submit" id="submit" value="SUBMIT"/>
-          </form>
-            
-        </section>
+            <div className={contactChange2}>
+                <form className="col-4 ofset-4 no-gutters"   id="contact-form" >
+                    <input placeholder="Name" type="text" name="name" required=""/>
+                    <input placeholder="Enter email" type="email" name="email" required=""/>
+                    <textarea placeholder="Your Message" type="text" name="message" className=""></textarea>
+                    
+                    <input type="submit" id="submit" value="SUBMIT"/>
+                </form>
+            </div>
+         
+        </section>    
         
-    )
+    ) 
 
 }
-export default Contact
+export default Contact 
+

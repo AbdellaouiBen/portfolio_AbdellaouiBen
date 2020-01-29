@@ -5,8 +5,8 @@ const Header =()=> {
     return(
        <header id="header">
            <div className="header_div">
-                <div className='header_text'>
-                    Hello, I'm <span className='header_nom'>Ben</span>. <br/>
+                <div className='header_text '>
+                    Hello, I'm <span className='header_nom line-1 anim-typewriter'>Ben</span>. <br/>
                     I'm a full-stack web developer.   
                 </div>
                 <button>Hire me</button>

@@ -1,15 +1,32 @@
 
-import React from 'react'
+import React, {useState,useEffect} from 'react'
 
 const AboutWho = (props) => {
+
+    const [aboutWhoChange1,setAboutChange1] = useState("hexagon2 d-none")
+    const [aboutWhoChange2,setAboutChange2] = useState("text-center pt-3 d-none")
+ 
+    useEffect(()=>{
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 750) {
+                setAboutChange1('hexagon2 animated fadeInLeft')
+            }
+            if (window.scrollY > 920) {
+                setAboutChange2('text-center pt-3 animated fadeInUp')
+            }
+          })  
+    })
+
+
+
     return (
             <div id="aboutWho" className="col-6 mb-5"> 
 
-                <div className="hexagon2 "> 
+                <div className={aboutWhoChange1}> 
                     <div className="hexTop"></div>
                     <div className="hexBottom"></div>
                 </div>
-                <div className="text-center pt-3 ">
+                <div className={aboutWhoChange2}>
                     <h2>Who's this guy?</h2>
                     <p className="pAboutWho">I'm a Front-End Developer for <a href="#about">ChowNow</a>  in Los Angeles, CA. <br />
                         I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences. <br />

@@ -1,8 +1,9 @@
 import React from 'react'
 
 const CarteAbout = (props)=> {
+    
     return(
-        <section id="CarteAbout" className="col-3 ">
+        <div id="CarteAbout" className="col-3 ">
     
              <div className="hex-wrap "  >
                   <div className="hexagon">
@@ -12,12 +13,7 @@ const CarteAbout = (props)=> {
             <h2 className="text-center colorAbout my-2"><b>{props.titreAbout}</b> </h2>
             <p className="text-center colorAbout"> <i>{props.textCarteAbout}</i></p>
             
-
-
- 
-
-
-        </section>
+        </div>
         
     )
 

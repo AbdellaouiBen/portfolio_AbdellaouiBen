@@ -6,6 +6,7 @@ const Projets = (props)=> {
         console.log("bdk");
         
     }
+
     
     
     let liste_de_projets =["ALL","Html/CSS","JAVASCIPT","REACT"]
@@ -24,6 +25,16 @@ const Projets = (props)=> {
                 {listeProjets}
             </div>
             <div className='div_projets'>
+                <div className="row">
+                    <div className="col-4 projet1 projet_carre">sdczec</div>
+                    <div className="col-4 projet2 projet_carre"></div>
+                    <div className="col-4 projet3 projet_carre"></div> 
+                </div>
+                <div className="row">
+                    <div className="col-4 projet4 projet_carre"></div>
+                    <div className="col-4 projet5 projet_carre"></div>
+                    <div className="col-4 projet6 projet_carre"></div>
+                </div>
 
             </div>
 

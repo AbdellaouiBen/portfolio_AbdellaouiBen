@@ -2,13 +2,13 @@ import React from 'react'
 
 const Nav =(props)=> {
 
-    function myFunction() {
-        if (document.body.scrollTop > 50 ) {
-          console.log("jknsdovnsdll");
-          
-        } 
-      }
-      myFunction()
+    // function myFunction() {
+    //     if (document.body.scrollTop > 50 ) {
+    //       console.log("jknsdovnsdll");
+    //     } 
+    //   }
+    //   myFunction()
+   
 
 
 
@@ -37,9 +37,10 @@ const Nav =(props)=> {
                                     <a className="nav-link" href="#contact">Contact</a>
                                 </li>
                             </ul>
-                            <span className="navbar-text">
+                            <a className="navbar-text">
+
                                 Your website is a click away.
-                            </span>
+                            </a>
                         </div>
                     </nav>
                     
