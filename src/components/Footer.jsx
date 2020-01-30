@@ -7,7 +7,7 @@ const Footer = (props)=> {
  
     useEffect(()=>{
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 4200) {
+            if (window.scrollY > 4250) {
                 setFooterChange1('icon-wrap animated fadeIn')
                 setFooterChange2('footer_div animated fadeIn')
             }
@@ -22,34 +22,32 @@ const Footer = (props)=> {
 
                 <div className={footerChange1}>
                         <a href="https://www.linkedin.com/in/ben-abdellaoui-00a99219b/">
-                            <div className="" >
+                            {/* <div className="" > */}
                             <i className="fab fa-2x fa-linkedin"></i>
-                            </div>
+                            {/* </div> */}
                         </a>
-                        <a href="">
-                            <div className="" >
+                        <a href="#contact">
+                            {/* <div className="" > */}
                             <i className="fab fa-2x fa-facebook"></i>
-                            </div>
+                            {/* </div> */}
                         </a>
                         <a href="https://www.instagram.com/benabdell/">
-                            <div className="">
+                            {/* <div className=""> */}
                             <i className="fab fa-2x fa-instagram"></i>
-                            </div>
+                            {/* </div> */}
                         </a>
                         <a href="https://github.com/AbdellaouiBen">
-                            <div className="">
+                            {/* <div className=""> */}
                             <i className="fab fa-2x fa-github"></i>
-                            </div>
+                            {/* </div> */}
                         </a>
                 </div>
-
-
             </div>
 
 
               
             <div className={footerChange2}>
-                <span>ABDELLAOUI BEN <a className="copyright" href=""><i className="far fa-copyright"></i>2020</a>  </span>
+                <span>ABDELLAOUI BEN <a className="copyright" href="#home"><i className="far fa-copyright"></i>2020</a>  </span>
             </div>
             
         

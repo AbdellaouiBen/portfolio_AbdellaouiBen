@@ -1,0 +1,46 @@
+
+
+// nav
+#nav 
+    z-index: 16
+    position: sticky
+    top: 0
+    border-bottom: 3px solid $color1
+    .navbar
+        background-color: $color2
+        font-family: Vollkorn
+        .nav-link,.navbar-brand 
+            color: $color1
+            
+            position: relative
+            max-width: max-content
+ 
+            &::before
+                content: ""
+                background-color: $color1
+                height: 3px
+                position: absolute
+                bottom: 7px
+                left: 50%
+                width: 0
+                transition: 1s ease
+
+            &::after
+                content: ""
+                background-color: $color1
+                height: 3px
+                position: absolute
+                bottom: 7px
+                right: 50%
+                width: 0
+                transition: 1s ease
+
+            &:hover
+                color: $color1bis
+                &::before
+                    width: 50%
+                &::after
+                    width: 50%
+    .navbar-text
+        text-decoration: none  
+

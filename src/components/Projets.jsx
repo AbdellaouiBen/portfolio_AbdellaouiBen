@@ -11,7 +11,7 @@ const Projets = (props)=> {
             if (window.scrollY > 1850) {
                 setProjetsChange1('row animated fadeInLeft')
             }
-            if (window.scrollY > 1870) {
+            if (window.scrollY > 1870) { 
                 setProjetsChange2('row animated fadeInRight')
             }
           })  
@@ -45,16 +45,16 @@ const Projets = (props)=> {
             </div> */}
             <div className='div_projets py-5'>
                 <div className={projetsChange1}>
-                    <div className="col-4 projet1 projet_carre"><div className="learnMoreL "><button>learn More</button></div></div>
-                    <div className="col-4 projet2 projet_carre"><div className="learnMoreM "><button>learn More</button></div></div>
-                    <div className="col-4 projet3 projet_carre"><div className="learnMoreR "><button>learn More</button></div></div> 
+                    <div className="col-12  px-2 px-lg-0 col-lg-4 projet1 projet_carre"><div className="learnMoreL "><button>learn More</button></div></div>
+                    <div className="col-12  px-2 px-lg-0 col-lg-4 projet2 projet_carre"><div className="learnMoreM "><button>learn More</button></div></div>
+                    <div className="col-12  px-2 px-lg-0 col-lg-4 projet3 projet_carre"><div className="learnMoreR "><button>learn More</button></div></div> 
                 </div>
                 <div className={projetsChange2}>
-                    <div className="col-4 projet4 projet_carre"><div className="learnMoreL "><button>learn More</button></div></div>
-                    <div className="col-4 projet5 projet_carre"><div className="learnMoreM "><button>learn More</button></div></div>
-                    <div className="col-4 projet6 projet_carre"><div className="learnMoreR "><button>learn More</button></div></div>
+                    <div className="col-12 px-2 px-lg-0 col-lg-4 projet4 projet_carre"><div className="learnMoreL "><button>learn More</button></div></div>
+                    <div className="col-12 px-2 px-lg-0 col-lg-4 projet5 projet_carre"><div className="learnMoreM "><button>learn More</button></div></div>
+                    <div className="col-12 px-2 px-lg-0 col-lg-4 projet6 projet_carre"><a href="#contact"><div className="learnMoreR "><button>learn More</button></div></a></div>
                 </div>
-
+   
             </div>
 
         </div>

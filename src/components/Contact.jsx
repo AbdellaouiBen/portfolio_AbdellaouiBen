@@ -34,7 +34,17 @@ const Contact = (props)=> {
                     <input placeholder="Enter email" type="email" name="email" required=""/>
                     <textarea placeholder="Your Message" type="text" name="message" className=""></textarea>
                     
-                    <input type="submit" id="submit" value="SUBMIT"/>
+                    {/* <input type="submit" id="submit" value="SUBMIT"/> */}
+                    
+                    {/* <a href="#contact">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        SUBMIT
+                    </a> */}
+
+                    <button className="butn butn1">SUBMIT</button>
                 </form>
             </div>
          

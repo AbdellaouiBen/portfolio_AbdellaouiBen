@@ -15,7 +15,7 @@ const Services = (props)=> {
                 setServicesChange1('service_what animated zoomIn')
             }
             if (window.scrollY > 2800) {
-                setServicesChange2('carousel slide animated rotateInUpRight')
+                setServicesChange2('carousel slide animated swing')
             }
           })  
     })
@@ -27,7 +27,7 @@ const Services = (props)=> {
                         What I can do for YOU ?
                     </div> 
 
-    
+     
                     <div id="carouselExampleIndicators"  className={servicesChange2} data-ride="carousel">
                         <ol className="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -107,6 +107,10 @@ const Services = (props)=> {
                             <span className="sr-only">Next</span>
                         </a>
                     </div>
+
+
+
+                    
         </div>
                 
 

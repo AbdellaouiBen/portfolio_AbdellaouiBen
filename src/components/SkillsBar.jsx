@@ -3,18 +3,18 @@ import React,{useState,useEffect} from 'react';
 
 const SkillsBar = (props)=> {
 
-  const [skillsBarChange1,setSkillsBarChange1] = useState("col-xl-6 col-sm-12 d-none")
+  const [skillsBarChange1,setSkillsBarChange1] = useState("col-xl-6 col-sm-12 pt-sm-5 d-none")
 
   useEffect(()=>{
       window.addEventListener('scroll', () => {
           if (window.scrollY > 750) {
-            setSkillsBarChange1('col-xl-6 col-sm-12 animated fadeInRight')
+            setSkillsBarChange1('col-xl-6 col-sm-12 pt-5 pt-lg-0 mt-5 mt-lg-0 animated fadeInRight')
           } 
           
         })  
   })
  
-
+    
 
     return( 
         <div id="SkillsBar" className={skillsBarChange1}>

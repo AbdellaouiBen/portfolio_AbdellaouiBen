@@ -37,8 +37,7 @@ const Nav =(props)=> {
                                     <a className="nav-link" href="#contact">Contact</a>
                                 </li>
                             </ul>
-                            <a className="navbar-text">
-
+                            <a href='#contact' className="navbar-text">
                                 Your website is a click away.
                             </a>
                         </div>

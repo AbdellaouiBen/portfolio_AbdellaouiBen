@@ -1,0 +1,106 @@
+//Projets    
+
+// menu des portfolio
+.bg_projets
+    background-color: #DDDDDD      
+#projets   
+    li   
+        list-style: none 
+        button 
+            font-weight: bold 
+            border: none
+            padding: 15px 60px
+            background-color: #DDDDDD  
+            color: grey
+
+.projet_carre 
+    border: 0.2px solid black 
+    position: relative
+    width: 100%
+    height: 300px  
+    background-size: cover 
+    background-repeat: no-repeat
+    background-position-x: 50%
+    overflow: hidden
+    button
+        border: none 
+        border-radius: 10px 
+        padding: 20px 
+        background-color: rgba(0, 0, 0, 0.7)
+        font-weight: bold 
+        color: white 
+    &:hover
+        // background-size: 110%
+        background-position-y: 100%
+        .learnMoreL,.learnMoreR,.learnMoreM
+            left: 0
+            top: 0 
+
+.learnMoreL
+    position: absolute 
+    left: -100%
+    background-color: rgba(0, 0, 255, 0.3)
+    padding: 0 
+    width: 100%
+    height: 300px 
+    display: flex 
+    justify-content: center
+    align-items: center
+    transition: 1s all 
+    button 
+        opacity: 100 
+.learnMoreR
+    position: absolute 
+    left: 100%
+    background-color: rgba(0, 0, 255, 0.3)
+    padding: 0 
+    width: 100%
+    height: 300px 
+    display: flex 
+    justify-content: center
+    align-items: center
+    transition: 1s all 
+    button 
+        opacity: 100 
+.learnMoreM
+    position: absolute 
+    left: 0
+    top: 100%
+    background-color: rgba(0, 0, 255, 0.3)
+    padding: 0 
+    width: 100%
+    height: 300px 
+    display: flex 
+    justify-content: center
+    align-items: center
+    transition: 1s all 
+    button 
+        opacity: 100 
+     
+
+
+.projet1
+    background-image: url("../../images/site-bootstrap.png")
+    transition: 0.5s linear
+.projet2
+    background-image: url("../../images/les-chefs.png")
+    transition: 6s linear 
+.projet3
+    background-image: url("../../images/youCommunik.png")
+    // background-size: 120%   
+    transition: 3s linear
+    &:hover
+        // background-size: 120%   
+.projet4 
+    background-image: url("../../images/flati-sass.png")
+    transition: 1s linear
+.projet5
+    background-image: url("../../images/faith.png")
+    transition: 0.7s linear
+    &:hover
+        // background-size: 105%
+.projet6
+    background-image: url("../../images/yourSite.png")
+    background-size: 80%
+    &:hover   
+        background-position-y: 0

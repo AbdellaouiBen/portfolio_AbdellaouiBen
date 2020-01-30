@@ -9,19 +9,19 @@ const About = ()=> {
     const [aboutChange3,setAboutChange3] = useState("col-md-3 col-sm-12 carteAbout2 ")
     const [aboutChange4,setAboutChange4] = useState("col-md-3 col-sm-12 carteAbout2 ")
  
-    useEffect(()=>{
+    useEffect(()=>{  
         window.addEventListener('scroll', () => {
             if (window.scrollY > 530) {
-              setAboutChange1('col-lg-3 col-md-6 col-sm-12 carteAbout animated fadeInUp ')
+              setAboutChange1('col-lg-3 col-md-6 col-sm-12 text-center carteAbout animated fadeInUp ')
 
               setTimeout(() => {
-                setAboutChange2('col-lg-3 col-md-6 col-sm-12 carteAbout animated fadeInUp')
+                setAboutChange2('col-lg-3 col-md-6 col-sm-12 text-center carteAbout animated fadeInUp')
               }, 400);
               setTimeout(() => {
-              setAboutChange3('col-lg-3 col-md-6 col-sm-12 carteAbout animated fadeInUp')
+              setAboutChange3('col-lg-3 col-md-6 col-sm-12 text-center carteAbout animated fadeInUp')
               }, 600); 
               setTimeout(() => {
-              setAboutChange4('col-lg-3 col-md-6 col-sm-12 carteAbout animated fadeInUp')
+              setAboutChange4('col-lg-3 col-md-6 col-sm-12 text-center carteAbout animated fadeInUp')
               }, 800);
             }
           })  
@@ -31,7 +31,7 @@ const About = ()=> {
 
 
     return(
-        <section id="about" className="container my-5 "> 
+        <section id="about" className="container py-5 "> 
             <div className="row justify-content-center animated fadeIn">
 
 
@@ -43,7 +43,7 @@ const About = ()=> {
                       </div>
                       <h2 className="text-center colorAbout my-2"><b>TitreAbout1</b> </h2>
                       <p className="text-center colorAbout"> <i>Fast load times and lag free interaction, my highest priority.</i></p>
-                  </div>      
+                  </div>        
 
                   <div className={aboutChange2}>
                       <div className="hex-wrap "  >
