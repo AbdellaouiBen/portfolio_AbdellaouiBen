@@ -21,7 +21,7 @@ const Footer = (props)=> {
                 
 
                 <div className={footerChange1}>
-                        <a href="https://www.linkedin.com/in/ben-abdellaoui-00a99219b/">
+                        <a target="_blank" href="https://www.linkedin.com/in/ben-abdellaoui-00a99219b/">
                             {/* <div className="" > */}
                             <i className="fab fa-2x fa-linkedin"></i>
                             {/* </div> */}
@@ -31,12 +31,12 @@ const Footer = (props)=> {
                             <i className="fab fa-2x fa-facebook"></i>
                             {/* </div> */}
                         </a>
-                        <a href="https://www.instagram.com/benabdell/">
+                        <a target="_blank" href="https://www.instagram.com/benabdell/">
                             {/* <div className=""> */}
                             <i className="fab fa-2x fa-instagram"></i>
                             {/* </div> */}
                         </a>
-                        <a href="https://github.com/AbdellaouiBen">
+                        <a target="_blank" href="https://github.com/AbdellaouiBen">
                             {/* <div className=""> */}
                             <i className="fab fa-2x fa-github"></i>
                             {/* </div> */}
