@@ -15,12 +15,7 @@ const Contact = (props)=> {
                 setContactChange2('row no-gutters animated fadeInLeft')
             }
           })  
-    })
-
-
-
-
-    
+    })        
     return(
         <section className="pb-5">  
             <div className={contactChange1}>
